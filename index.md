@@ -12,9 +12,20 @@ Welcome to the documentation for the Automated Flight Planning Software designed
 7. [Troubleshooting](#troubleshooting)
 8. [FAQ](#faq)
 9. [Support](#support)
+10. [Point A to Point B Planning](#point-a-to-point-b-planning)
+11. [Delivery Route](#delivery-route)
+12. [Multi-Delivery](#multi-delivery)
+13. [Security Route](#security-route)
+14. [Linear Flight Route](#linear-flight-route)
+15. [Tower Inspection](#tower-inspection)
+
+---
 
 ## Overview
-The Automated Flight Planning Software is a robust tool designed to optimize mission planning for ground control teams. It integrates advanced algorithms to handle complex flight paths, restricted zones, and dynamic weather conditions.
+The Automated Flight Planning Software is a robust tool designed to optimize mission planning for ground control teams. It integrates advanced algorithms to handle complex flight paths, restricted zones, and dynamic weather conditions. The tool provides:
+- Automated route generation.
+- Real-time conflict detection.
+- Export options for common ground control systems.
 
 ## Installation
 ### Prerequisites
@@ -23,6 +34,6 @@ The Automated Flight Planning Software is a robust tool designed to optimize mis
 - [Git](https://git-scm.com/).
 
 ### Steps
-1. Clone the repository:
+1. Clone the repository from GitHub:
    ```bash
    git clone https://github.com/your-repo/automated-flight-planning.git
