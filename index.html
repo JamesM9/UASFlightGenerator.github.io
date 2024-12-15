@@ -75,6 +75,7 @@
         <div id="introduction" class="section">
             <h1>Introduction</h1>
             <p>Welcome to the QGC Automated Flight Planner documentation. This tool simplifies drone mission planning for point-to-point navigation, delivery routes, security patrols, and tower inspections.</p>
+            <img src="assets/home.png" alt="Home Page">
         </div>
 
         <div id="installation" class="section">
@@ -99,7 +100,7 @@ python Main.py</code></pre>
                 <li>Select the aircraft type and set altitude preferences.</li>
                 <li>Generate the <code>.plan</code> file for QGroundControl.</li>
             </ul>
-            <img src="assets/Screenshot-from-2024-12-15-15-46-46.png" alt="Point A to Point B Planning">
+            <img src="assets/pointatopointb.png" alt="Point A to Point B Planning">
         </div>
 
         <div id="delivery-route" class="section">
@@ -110,10 +111,53 @@ python Main.py</code></pre>
                 <li>Adjust altitude and landing behavior.</li>
                 <li>Generate the <code>.plan</code> file.</li>
             </ul>
-            <img src="assets/Screenshot-from-2024-12-15-15-47-18.png" alt="Delivery Route">
+            <img src="assets/deliveryroute.png" alt="Delivery Route">
         </div>
 
-        <!-- Add sections for Multi-Delivery, Security Route, Linear Flight Route, and Tower Inspection similarly -->
+        <div id="multi-delivery" class="section">
+            <h1>Multi-Delivery</h1>
+            <p>Plan routes for multiple delivery locations.</p>
+            <ul>
+                <li>Enter the start coordinates.</li>
+                <li>Add multiple delivery points.</li>
+                <li>Set altitude and generate the <code>.plan</code> file.</li>
+            </ul>
+            <img src="assets/multidelivery.png" alt="Multi-Delivery">
+        </div>
+
+        <div id="security-route" class="section">
+            <h1>Security Route</h1>
+            <p>Generate flight plans for security patrols.</p>
+            <ul>
+                <li>Load a KML file for route planning.</li>
+                <li>Set altitude and number of waypoints.</li>
+                <li>Generate and export the flight plan.</li>
+            </ul>
+            <img src="assets/securityroute.png" alt="Security Route">
+        </div>
+
+        <div id="linear-flight-route" class="section">
+            <h1>Linear Flight Route</h1>
+            <p>Plan linear routes for extended missions.</p>
+            <ul>
+                <li>Load a KML path file.</li>
+                <li>Set waypoint intervals and altitude.</li>
+                <li>Generate the <code>.plan</code> file.</li>
+            </ul>
+            <img src="assets/linearflightroute.png" alt="Linear Flight Route">
+        </div>
+
+        <div id="tower-inspection" class="section">
+            <h1>Tower Inspection</h1>
+            <p>Plan routes for tower inspections.</p>
+            <ul>
+                <li>Enter takeoff and landing coordinates.</li>
+                <li>Input tower coordinates for inspection.</li>
+                <li>Set the waypoint offset distance.</li>
+                <li>Generate the flight plan.</li>
+            </ul>
+            <img src="assets/towerinspection.png" alt="Tower Inspection">
+        </div>
 
         <div id="support" class="section">
             <h1>Support</h1>
