@@ -41,97 +41,109 @@ Welcome to the **QGC Automated Flight Planner**! This software automates mission
 - **pip**: Package manager for Python dependencies.
 
 ### Steps
-Tools and Usage
-Point A to Point B Planning
-Plan direct flights between two points.
+## Tools and Usage
 
-Features:
+### Point A to Point B Planning
+**Plan direct flights between two points.**
 
-Set start and end coordinates.
-Adjust altitude and waypoint intervals.
-Export .plan files for QGroundControl.
-Steps:
+#### Features:
+- Set start and end coordinates.
+- Adjust altitude and waypoint intervals.
+- Export `.plan` files for QGroundControl.
 
-Enter Start Coordinates and End Coordinates.
-Select the Aircraft Type and set altitude preferences.
-Generate the .plan file.
-Screenshot:
+#### Steps:
+1. Enter **Start Coordinates** and **End Coordinates**.
+2. Select the **Aircraft Type** and set altitude preferences.
+3. Click **Generate .plan File**.
 
+**Screenshot**:  
+![Point A to B](assets/Screenshot-from-2024-12-15-15-46-46.png)
 
-Delivery Route
-Create delivery routes for single missions.
+---
 
-Features:
+### Delivery Route
+**Create delivery routes for single missions.**
 
-Set delivery start and landing points.
-Adjust altitude and landing behavior.
-Steps:
+#### Features:
+- Set delivery start and landing points.
+- Adjust altitude and landing behavior.
 
-Input Start Coordinates and End Coordinates.
-Select the drone type and define Landing Behavior at Point B.
-Generate the .plan file for execution.
-Screenshot:
+#### Steps:
+1. Input **Start Coordinates** and **End Coordinates**.
+2. Select the **Drone Type** and define **Landing Behavior at Point B**.
+3. Click **Generate .plan File** for execution.
 
+**Screenshot**:  
+![Delivery Route](assets/Screenshot-from-2024-12-15-15-47-18.png)
 
-Multi-Delivery
-Design routes for multiple delivery locations.
+---
 
-Features:
+### Multi-Delivery
+**Design routes for multiple delivery locations.**
 
-Add multiple delivery points.
-Define altitude and waypoint parameters.
-Steps:
+#### Features:
+- Add multiple delivery points.
+- Define altitude and waypoint parameters.
 
-Enter Start Coordinates.
-Add delivery points using Add Delivery Point.
-Configure altitude and export the .plan file.
-Screenshot:
+#### Steps:
+1. Enter **Start Coordinates**.
+2. Add delivery points using **Add Delivery Point**.
+3. Configure altitude and export the `.plan` file.
 
+**Screenshot**:  
+![Multi-Delivery](assets/Screenshot-from-2024-12-15-15-48-00.png)
 
-Security Route
-Generate flight plans for security patrols.
+---
 
-Features:
+### Security Route
+**Generate flight plans for security patrols.**
 
-Load and use KML files for route generation.
-Set altitude and define the number of waypoints.
-Steps:
+#### Features:
+- Load and use **KML Files** for route generation.
+- Set altitude and define the number of waypoints.
 
-Load a KML File.
-Set the Altitude Above Terrain and Number of Waypoints.
-Generate and export the flight plan.
-Screenshot:
+#### Steps:
+1. Load a **KML File**.
+2. Set the **Altitude Above Terrain** and the **Number of Waypoints**.
+3. Click **Generate and Export** the flight plan.
 
+**Screenshot**:  
+![Security Route](assets/Screenshot-from-2024-12-15-15-48-18.png)
 
-Linear Flight Route
-Create linear flight paths using KML files.
+---
 
-Features:
+### Linear Flight Route
+**Create linear flight paths using KML files.**
 
-Load KML files for extended missions.
-Set waypoint intervals and altitude.
-Steps:
+#### Features:
+- Load **KML Files** for extended missions.
+- Set waypoint intervals and altitude.
 
-Load a KML Path File.
-Configure Waypoint Interval and altitude settings.
-Set takeoff and landing coordinates, then export the plan.
-Screenshot:
+#### Steps:
+1. Load a **KML Path File**.
+2. Configure **Waypoint Interval** and altitude settings.
+3. Set **Takeoff** and **Landing Coordinates**, then export the plan.
 
+**Screenshot**:  
+![Linear Flight Route](assets/Screenshot-from-2024-12-15-15-48-35.png)
 
-Tower Inspection
-Plan routes for tower inspections with precise waypoints.
+---
 
-Features:
+### Tower Inspection
+**Plan routes for tower inspections with precise waypoints.**
 
-Define tower coordinates for accurate inspection.
-Set waypoint offset distances.
-Steps:
+#### Features:
+- Define tower coordinates for accurate inspection.
+- Set waypoint offset distances.
 
-Enter Takeoff and Landing Coordinates.
-Input the Tower Coordinates for inspection.
-Set the Waypoint Offset Distance.
-Generate the flight plan.
-Screenshot:
+#### Steps:
+1. Enter **Takeoff and Landing Coordinates**.
+2. Input the **Tower Coordinates** for inspection.
+3. Set the **Waypoint Offset Distance**.
+4. Click **Generate Flight Plan**.
+
+**Screenshot**:  
+![Tower Inspection](assets/Screenshot-from-2024-12-15-15-48-51.png)
 
 
 ---
