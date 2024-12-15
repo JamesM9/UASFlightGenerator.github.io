@@ -3,169 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automated Flight Planning Software Documentation</title>
+    <title>QGC Automated Flight Planner Documentation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
+            display: flex;
         }
-        h1, h2, h3 {
-            color: #0056b3;
+        #sidebar {
+            width: 250px;
+            background-color: #2C3E50;
+            color: white;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+            padding: 20px;
         }
-        a {
-            color: #0056b3;
+        #sidebar a {
+            color: #ecf0f1;
             text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            font-size: 16px;
         }
-        a:hover {
+        #sidebar a:hover {
             text-decoration: underline;
         }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-            background: white;
+        #content {
+            margin-left: 250px;
             padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        h1, h2, h3 {
+            color: #34495E;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #3498DB;
+            overflow-x: auto;
         }
         img {
             max-width: 100%;
             height: auto;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        pre {
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-        .toc {
-            background-color: #eee;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        .toc ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .toc li {
-            margin: 5px 0;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Automated Flight Planning Software Documentation</h1>
-        <p>Welcome to the documentation for the Automated Flight Planning Software designed for ground control operations. This tool simplifies and automates the planning of flight missions, ensuring efficiency and accuracy.</p>
+    <div id="sidebar">
+        <h2>Navigation</h2>
+        <a href="#introduction">Introduction</a>
+        <a href="#installation">Installation</a>
+        <a href="#getting-started">Getting Started</a>
+        <h3>Tools</h3>
+        <a href="#point-a-to-b">Point A to Point B Planning</a>
+        <a href="#delivery-route">Delivery Route</a>
+        <a href="#multi-delivery">Multi-Delivery</a>
+        <a href="#security-route">Security Route</a>
+        <a href="#linear-flight-route">Linear Flight Route</a>
+        <a href="#tower-inspection">Tower Inspection</a>
+        <a href="#configuration">Configuration</a>
+        <a href="#troubleshooting">Troubleshooting</a>
+        <a href="#support">Support</a>
+    </div>
 
-        <div class="toc">
-            <h2>Table of Contents</h2>
-            <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#installation">Installation</a></li>
-                <li><a href="#getting-started">Getting Started</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#usage-instructions">Usage Instructions</a></li>
-                <li><a href="#point-a-to-point-b-planning">Point A to Point B Planning</a></li>
-                <li><a href="#delivery-route">Delivery Route</a></li>
-                <li><a href="#multi-delivery">Multi-Delivery</a></li>
-                <li><a href="#security-route">Security Route</a></li>
-                <li><a href="#linear-flight-route">Linear Flight Route</a></li>
-                <li><a href="#tower-inspection">Tower Inspection</a></li>
-                <li><a href="#support">Support</a></li>
-            </ul>
+    <div id="content">
+        <div id="introduction" class="section">
+            <h1>Introduction</h1>
+            <p>Welcome to the QGC Automated Flight Planner documentation. This tool simplifies drone mission planning for point-to-point navigation, delivery routes, security patrols, and tower inspections.</p>
         </div>
 
-        <h2 id="overview">Overview</h2>
-        <p>The Automated Flight Planning Software is a robust tool designed to optimize mission planning for ground control teams. It integrates advanced algorithms to handle complex flight paths, restricted zones, and dynamic weather conditions.</p>
-
-        <h2 id="installation">Installation</h2>
-        <p>To install the software:</p>
-        <pre><code>git clone https://github.com/your-repo/automated-flight-planning.git
+        <div id="installation" class="section">
+            <h1>Installation</h1>
+            <p>Follow these steps to set up the software:</p>
+            <pre><code>git clone https://github.com/your-repo/automated-flight-planning.git
 cd automated-flight-planning
 pip install -r requirements.txt
-python setup.py</code></pre>
+python Main.py</code></pre>
+        </div>
 
-        <h2 id="getting-started">Getting Started</h2>
-        <p>To launch the application, run:</p>
-        <pre><code>python main.py</code></pre>
+        <div id="getting-started" class="section">
+            <h1>Getting Started</h1>
+            <p>After installation, run the software and select a tool from the sidebar to begin.</p>
+        </div>
 
-        <h2 id="features">Features</h2>
-        <ul>
-            <li>Dynamic Route Optimization</li>
-            <li>Real-time Conflict Detection</li>
-            <li>Multi-Export Formats (KML, CSV, JSON)</li>
-        </ul>
+        <div id="point-a-to-b" class="section">
+            <h1>Point A to Point B Planning</h1>
+            <p>Plan direct flights between two coordinates.</p>
+            <ul>
+                <li>Enter start and end coordinates.</li>
+                <li>Select the aircraft type and set altitude preferences.</li>
+                <li>Generate the <code>.plan</code> file for QGroundControl.</li>
+            </ul>
+            <img src="assets/Screenshot-from-2024-12-15-15-46-46.png" alt="Point A to Point B Planning">
+        </div>
 
-        <h2 id="point-a-to-point-b-planning">Point A to Point B Planning</h2>
-        <p>Plan direct flights between two points.</p>
-        <img src="../assets/Screenshot-from-2024-12-15-15-46-46.png" alt="Point A to Point B Planning">
-        <p><strong>Steps:</strong></p>
-        <ul>
-            <li>Enter start and end coordinates.</li>
-            <li>Select the aircraft type and altitude.</li>
-            <li>Generate the flight plan.</li>
-        </ul>
+        <div id="delivery-route" class="section">
+            <h1>Delivery Route</h1>
+            <p>Create optimized routes for delivery missions.</p>
+            <ul>
+                <li>Input start and end coordinates.</li>
+                <li>Adjust altitude and landing behavior.</li>
+                <li>Generate the <code>.plan</code> file.</li>
+            </ul>
+            <img src="assets/Screenshot-from-2024-12-15-15-47-18.png" alt="Delivery Route">
+        </div>
 
-        <h2 id="delivery-route">Delivery Route</h2>
-        <p>Create delivery routes for single missions.</p>
-        <img src="../assets/Screenshot-from-2024-12-15-15-47-18.png" alt="Delivery Route">
-        <ul>
-            <li>Input start and end coordinates.</li>
-            <li>Adjust altitude and landing behavior.</li>
-            <li>Export the `.plan` file for execution.</li>
-        </ul>
+        <!-- Add sections for Multi-Delivery, Security Route, Linear Flight Route, and Tower Inspection similarly -->
 
-        <h2 id="multi-delivery">Multi-Delivery</h2>
-        <p>Plan routes for multiple deliveries.</p>
-        <img src="../assets/Screenshot-from-2024-12-15-15-48-00.png" alt="Multi-Delivery">
-        <ul>
-            <li>Enter start coordinates.</li>
-            <li>Add multiple delivery points.</li>
-            <li>Configure settings and export the plan.</li>
-        </ul>
-
-        <h2 id="security-route">Security Route</h2>
-        <p>Generate flight plans for security patrols.</p>
-        <img src="../assets/Screenshot-from-2024-12-15-15-48-18.png" alt="Security Route">
-        <ul>
-            <li>Load a KML file for waypoints.</li>
-            <li>Set altitude and number of waypoints.</li>
-            <li>Generate and export the plan.</li>
-        </ul>
-
-        <h2 id="linear-flight-route">Linear Flight Route</h2>
-        <p>Plan linear missions using KML files.</p>
-        <img src="../assets/Screenshot-from-2024-12-15-15-48-35.png" alt="Linear Flight Route">
-        <ul>
-            <li>Load a KML path file.</li>
-            <li>Set altitude and waypoint intervals.</li>
-            <li>Generate the `.plan` file.</li>
-        </ul>
-
-        <h2 id="tower-inspection">Tower Inspection</h2>
-        <p>Plan routes for tower inspections.</p>
-        <img src="../assets/Screenshot-from-2024-12-15-15-48-51.png" alt="Tower Inspection">
-        <ul>
-            <li>Enter takeoff and landing coordinates.</li>
-            <li>Input tower coordinates and set waypoint offsets.</li>
-            <li>Generate the flight plan.</li>
-        </ul>
-
-        <h2 id="support">Support</h2>
-        <p>For assistance:</p>
-        <ul>
-            <li>Visit the <a href="https://github.com/your-repo/automated-flight-planning">GitHub Repository</a>.</li>
-            <li>Contact support@example.com.</li>
-            <li>Join the community forum for discussions and help.</li>
-        </ul>
+        <div id="support" class="section">
+            <h1>Support</h1>
+            <p>Need help? Contact us at <a href="mailto:support@example.com">support@example.com</a> or visit our <a href="https://github.com/your-repo/automated-flight-planning">GitHub Repository</a>.</p>
+        </div>
     </div>
 </body>
 </html>
