@@ -4,34 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automated Flight Planning Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin: 10px 0 10px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .code {
+            background-color: #f4f4f4;
+            border-left: 5px solid #ccc;
+            padding: 10px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Automated Flight Planning Software Documentation</h1>
-    <p>Welcome to the documentation for the Automated Flight Planning Software designed for ground control operations. This tool simplifies and automates the planning of flight missions, ensuring efficiency and accuracy.</p>
+    <div class="container">
+        <h1>Automated Flight Planning Software Documentation</h1>
+        <p>Welcome to the documentation for the Automated Flight Planning Software designed for ground control operations. This tool simplifies and automates the planning of flight missions, ensuring efficiency and accuracy.</p>
 
-    <h2>Table of Contents</h2>
-    <ol>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#getting-started">Getting Started</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#usage-instructions">Usage Instructions</a></li>
-        <li><a href="#configuration-options">Configuration Options</a></li>
-        <li><a href="#troubleshooting">Troubleshooting</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#support">Support</a></li>
-    </ol>
+        <h2>Table of Contents</h2>
+        <ol>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#usage-instructions">Usage Instructions</a></li>
+            <li><a href="#configuration-options">Configuration Options</a></li>
+            <li><a href="#troubleshooting">Troubleshooting</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#support">Support</a></li>
+        </ol>
 
-    <h2 id="overview">Overview</h2>
-    <p>The Automated Flight Planning Software is a robust tool designed to optimize mission planning for ground control teams...</p>
-    <!-- Repeat similar structure for other sections -->
+        <h2 id="overview">Overview</h2>
+        <p>The Automated Flight Planning Software is a robust tool designed to optimize mission planning for ground control teams. It integrates advanced algorithms to handle complex flight paths, restricted zones, and dynamic weather conditions. The tool provides:</p>
+        <ul>
+            <li>Automated route generation.</li>
+            <li>Real-time conflict detection.</li>
+            <li>Export options for common ground control systems.</li>
+        </ul>
 
-    <h2 id="support">Support</h2>
-    <p>For additional help:</p>
-    <ul>
-        <li>Visit the <a href="https://github.com/your-repo/automated-flight-planning">GitHub repository</a>.</li>
-        <li>Contact support at <a href="mailto:support@example.com">support@example.com</a>.</li>
-        <li>Check the <a href="https://forum.example.com">community forum</a>.</li>
-    </ul>
+        <h2 id="installation">Installation</h2>
+        <h3>Prerequisites</h3>
+        <ul>
+            <li>Operating System: Windows 10+, macOS 11+, or Linux (Ubuntu 20.04+ recommended).</li>
+            <li>Python 3.8 or higher.</li>
+            <li><a href="https://git-scm.com/">Git</a>.</li>
+        </ul>
+        <h3>Steps</h3>
+        <ol>
+            <li>Clone the repository from GitHub:</li>
+            <pre class="code">git clone https://github.com/your-repo/automated-flight-planning.git</pre>
+            <li>Navigate to the project directory:</li>
+            <pre class="code">cd automated-flight-planning</pre>
+            <li>Install the required dependencies:</li>
+            <pre class="code">pip install -r requirements.txt</pre>
+            <li>Run the initial setup script:</li>
+            <pre class="code">python setup.py</pre>
+        </ol>
+
+        <h2 id="getting-started">Getting Started</h2>
+        <ol>
+            <li>Launch the application by running:</li>
+            <pre class="code">python main.py</pre>
+            <li>Log in or create a new account within the software.</li>
+            <li>Set your mission parameters (e.g., starting point, destination, restrictions).</li>
+            <li>Generate your flight plan and export it for use.</li>
+        </ol>
+
+        <h2 id="features">Features</h2>
+        <h3>Key Capabilities</h3>
+        <ul>
+            <li><strong>Dynamic Route Optimization</strong>: Adjusts paths based on weather, airspace restrictions, and other variables.</li>
+            <li><strong>Conflict Detection</strong>: Identifies potential issues with restricted zones or no-fly areas.</li>
+            <li><strong>Multi-Export Formats</strong>: Supports common formats like KML, CSV, and JSON.</li>
+        </ul>
+
+        <h2 id="usage-instructions">Usage Instructions</h2>
+        <h3>Creating a New Flight Plan</h3>
+        <ol>
+            <li>Open the application.</li>
+            <li>Click on "New Mission."</li>
+            <li>Input required details:</li>
+            <ul>
+                <li>Mission name.</li>
+                <li>Departure and destination points.</li>
+                <li>Altitude and speed parameters.</li>
+            </ul>
+            <li>Click "Generate Plan."</li>
+        </ol>
+
+        <h2 id="configuration-options">Configuration Options</h2>
+        <p>The configuration file (<code>config.json</code>) allows for advanced customization:</p>
+        <pre class="code">{
+    "default_altitude": 1000,
+    "max_speed": 250,
+    "weather_api_key": "your-api-key",
+    "restricted_zones": ["zone1", "zone2"]
+}</pre>
+
+        <h2 id="troubleshooting">Troubleshooting</h2>
+        <h3>Common Issues</h3>
+        <ul>
+            <li><strong>Error: "Missing Dependencies"</strong>: Ensure all dependencies are installed using:</li>
+            <pre class="code">pip install -r requirements.txt</pre>
+            <li><strong>Application Won't Launch</strong>: Verify Python version compatibility and check for typos in the command.</li>
+        </ul>
+
+        <h2 id="faq">FAQ</h2>
+        <ul>
+            <li><strong>Can the software handle international flight paths?</strong> Yes, the software supports international airspace.</li>
+            <li><strong>How often is the software updated?</strong> Updates are released quarterly, or as needed to address major issues.</li>
+            <li><strong>Is there a mobile version?</strong> A mobile version is under development and will be available soon.</li>
+        </ul>
+
+        <h2 id="support">Support</h2>
+        <p>For additional help:</p>
+        <ul>
+            <li>Visit the <a href="https://github.com/your-repo/automated-flight-planning">GitHub repository</a>.</li>
+            <li>Contact support at <a href="mailto:support@example.com">support@example.com</a>.</li>
+            <li>Check the <a href="https://forum.example.com">community forum</a>.</li>
+        </ul>
+    </div>
 </body>
 </html>
