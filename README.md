@@ -30,6 +30,9 @@ Welcome to the **QGC Automated Flight Planner**! This software automates mission
 - **QGroundControl Compatibility**: Exports `.plan` files for seamless use in QGroundControl.
 - **Terrain Integration**: Adjusts flight altitude based on real-time elevation data.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1-GiAvq1e1k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ---
 
 ## Installation
@@ -59,6 +62,9 @@ Welcome to the **QGC Automated Flight Planner**! This software automates mission
 **Screenshot**:  
 ![Point A to B](assets/Screenshot-from-2024-12-15-15-46-46.png)
 
+Learn how to plan direct flights between two points with our software.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EDmbHcl0iUI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ---
 
 ### Delivery Route
@@ -75,6 +81,9 @@ Welcome to the **QGC Automated Flight Planner**! This software automates mission
 
 **Screenshot**:  
 ![Delivery Route](assets/Screenshot-from-2024-12-15-15-47-18.png)
+
+**Video Guide:**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Br2pegy0bew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -93,6 +102,9 @@ Welcome to the **QGC Automated Flight Planner**! This software automates mission
 **Screenshot**:  
 ![Multi-Delivery](assets/Screenshot-from-2024-12-15-15-48-00.png)
 
+**Video Guide:**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ISb9NBNXhI4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ---
 
 ### Security Route
@@ -110,6 +122,9 @@ Welcome to the **QGC Automated Flight Planner**! This software automates mission
 **Screenshot**:  
 ![Security Route](assets/Screenshot-from-2024-12-15-15-48-18.png)
 
+**Video Guide:**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b5-dbDvxBUA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ---
 
 ### Linear Flight Route
@@ -126,6 +141,9 @@ Welcome to the **QGC Automated Flight Planner**! This software automates mission
 
 **Screenshot**:  
 ![Linear Flight Route](assets/Screenshot-from-2024-12-15-15-48-35.png)
+
+**Video Guide:**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NDQKukjSL5c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -145,6 +163,8 @@ Welcome to the **QGC Automated Flight Planner**! This software automates mission
 **Screenshot**:  
 ![Tower Inspection](assets/Screenshot-from-2024-12-15-15-48-51.png)
 
+**Video Guide:**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bFOhnpKefoI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -163,3 +183,4 @@ Let me know if further adjustments or additions are needed! 🚀
    ```bash
    git clone https://github.com/your-repo/automated-flight-planning.git
    cd automated-flight-planning
+l
