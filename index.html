@@ -82,20 +82,26 @@
     <div id="content">
         <div id="introduction" class="section">
             <h1>Introduction</h1>
-            <p>Welcome to the QGC Automated Flight Planner documentation. This tool simplifies drone mission planning for point-to-point navigation, delivery routes, security patrols, and tower inspections.</p>
+            <p>Welcome to the QGC Automated Flight Planner documentation. This tool simplifies drone mission planning for point-to-point navigation, delivery routes, security patrols, and tower inspections. This is not a complete replacement for flight planning for the specific flight operation types, but is meant to eliminate a large amount of the work that goes into initially setting up the flight plan for each type. Please note that this software will be undergoing updates and be later released for operating systems not just Windows, Linux, and Mac. We are working on an Android release and a IOS release in the future once we clean up the user interface.</p>
             <img src="assets/home.png" alt="Home Page">
             <iframe src="https://www.youtube.com/embed/1-GiAvq1e1k" allowfullscreen></iframe>
         </div>
 
         <div id="installation" class="section">
-            <h1>Installation</h1>
-            <p>Follow these steps to set up the software:</p>
+            <h1>Installation (Linux/Ubuntu)</h1>
+            <p>Follow these steps to set up the software.:</p>
             <pre><code>git clone https://github.com/your-repo/automated-flight-planning.git
 cd automated-flight-planning
 pip install -r requirements.txt
 python Main.py</code></pre>
         </div>
-
+        <h1>Installation (Windows)</h1>
+        <p>Follow these steps to set up the software.:</p>
+            <pre><code>got to https://github.com/JamesM9/versarouteplanner.github.io/releases/tag/Alpha-initial
+Download the UASFlightGenerator.exe
+Run the setup
+Select Program from Desktop Icon</code></pre>
+        </div>
         <div id="getting-started" class="section">
             <h1>Getting Started</h1>
             <p>After installation, run the software and select a tool from the sidebar to begin.</p>
@@ -103,7 +109,7 @@ python Main.py</code></pre>
 
         <div id="point-a-to-b" class="section">
             <h1>Point A to Point B Planning</h1>
-            <p>Plan direct flights between two coordinates.</p>
+            <p>Plan direct flights between two coordinates either by entering the takeoff and landing location coordinates or by importing a flight path via a KML and having the waypoints track the KML path.</p>
             <ul>
                 <li>Enter start and end coordinates.</li>
                 <li>Select the aircraft type and set altitude preferences.</li>
@@ -115,7 +121,7 @@ python Main.py</code></pre>
 
         <div id="delivery-route" class="section">
             <h1>Delivery Route</h1>
-            <p>Create optimized routes for delivery missions.</p>
+            <p>Create optimized routes for delivery missions. This is specifically for singular delivery aircraft flights where the aircraft delivers and returns or stays at the delivery location.</p>
             <ul>
                 <li>Input start and end coordinates.</li>
                 <li>Adjust altitude and landing behavior.</li>
@@ -127,7 +133,7 @@ python Main.py</code></pre>
 
         <div id="multi-delivery" class="section">
             <h1>Multi-Delivery</h1>
-            <p>Plan routes for multiple delivery locations.</p>
+            <p>Plan routes for multiple delivery locations. This tools does not set a limit to the amount of delivery locations. Therefore it is cautioned that when using this tool, you consider the distance and determine how much flight time it would take to complete the mission or the deliveries when using this tool. For this tool the delivery assumes that it will be a drop or lowering mechanism, you will need to edit the delivery waypoints if you are using a landing delivery method.</p>
             <ul>
                 <li>Enter the start coordinates.</li>
                 <li>Add multiple delivery points.</li>
@@ -139,7 +145,7 @@ python Main.py</code></pre>
 
         <div id="security-route" class="section">
             <h1>Security Route</h1>
-            <p>Generate flight plans for security patrols.</p>
+            <p>Generate flight plans for security patrols. There are two methods of security routes. Perimeter or Random. Perimeter matches the KML polygon file that was uploaded and move the flight path to the inside of the perimeter to match it. Random creates a random generated flight path that, depending on the number of waypoint selected, should cover the area inside of the loaded KML polygon. More waypoints means more coverage and is good for providing overwatch for targets.</p>
             <ul>
                 <li>Load a KML file for route planning.</li>
                 <li>Set altitude and number of waypoints.</li>
@@ -151,7 +157,7 @@ python Main.py</code></pre>
 
         <div id="linear-flight-route" class="section">
             <h1>Linear Flight Route</h1>
-            <p>Plan linear routes for extended missions.</p>
+            <p>Plan linear routes for flights over linear applications such as transmission lines, railways, roadways, and pipelines. You may still need to go into the mission when loaded to QGround Control and edit the waypoints to start the camera capture.</p>
             <ul>
                 <li>Load a KML path file.</li>
                 <li>Set waypoint intervals and altitude.</li>
@@ -181,3 +187,4 @@ python Main.py</code></pre>
     </div>
 </body>
 </html>
+
