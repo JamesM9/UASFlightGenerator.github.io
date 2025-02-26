@@ -263,9 +263,96 @@ Click on the Desktop icon to run the software.</code></pre>
             <iframe src="https://www.youtube.com/embed/bFOhnpKefoI" allowfullscreen></iframe>
         </div>
 
+        <div id="configuration" class="section">
+            <h1>Configuration</h1>
+            <p>This section provides instructions on how to configure the mission planner for different aircraft types and the waypoints that will be used for each type. The mission planner supports the following aircraft configurations:</p>
+
+            <h2>1. Multicopter/Helicopter</h2>
+            <ul>
+                <li><strong>Takeoff Command:</strong> Uses the TAKEOFF command (command 22) with a fixed altitude above the takeoff point.</li>
+                <li><strong>Waypoints:</strong>
+                    <ul>
+                        <li>Waypoints are generated at a constant altitude above the terrain.</li>
+                        <li>The drone will follow a direct path between waypoints.</li>
+                        <li>The altitude is user-defined and remains constant throughout the mission.</li>
+                    </ul>
+                </li>
+                <li><strong>Landing Command:</strong> Uses the LAND command (command 21) to land at the specified landing coordinates.</li>
+            </ul>
+
+            <h2>2. Fixed Wing</h2>
+            <ul>
+                <li><strong>Takeoff Command:</strong> Uses the FIXED_WING_TAKEOFF command (command 22) with a specified pitch angle (e.g., 15 m/s) to initiate takeoff.</li>
+                <li><strong>Waypoints:</strong>
+                    <ul>
+                        <li>Waypoints are generated at a constant altitude above the terrain.</li>
+                        <li>The drone will follow a smooth path between waypoints, maintaining a constant speed.</li>
+                        <li>The altitude is user-defined and remains constant throughout the mission.</li>
+                    </ul>
+                </li>
+                <li><strong>Landing Command:</strong> Uses the LAND command (command 21) or a Fixed-Wing Landing Pattern for a controlled descent and landing.</li>
+                <li>The landing pattern includes a loiter point and an approach path to ensure a safe landing.</li>
+            </ul>
+
+            <h2>3. Quadplane/VTOL Hybrid</h2>
+            <ul>
+                <li><strong>Takeoff Command:</strong> Uses the VTOL_TAKEOFF command (command 84) to take off vertically.</li>
+                <li><strong>Waypoints:</strong>
+                    <ul>
+                        <li>Waypoints are generated at a constant altitude above the terrain.</li>
+                        <li>The drone will transition between vertical and horizontal flight modes as needed.</li>
+                        <li>The altitude is user-defined and remains constant throughout the mission.</li>
+                    </ul>
+                </li>
+                <li><strong>Landing Command:</strong> Uses the VTOL_LAND command (command 85) to land vertically.</li>
+                <li>The drone will transition from horizontal flight to vertical descent before landing.</li>
+            </ul>
+
+            <h2>Waypoint Configuration</h2>
+            <p>The mission planner generates waypoints based on the following parameters:</p>
+            <ul>
+                <li><strong>Altitude Above Terrain:</strong> The altitude is specified in either feet or meters. The drone will maintain this altitude above the terrain throughout the mission.</li>
+                <li><strong>Waypoint Interval:</strong> The distance between waypoints is specified in either meters or feet. Smaller intervals result in more waypoints and a smoother flight path.</li>
+                <li><strong>Geofence Buffer:</strong> A buffer zone around the flight path is specified in either meters or feet. This ensures the drone stays within a safe distance from obstacles or restricted areas.</li>
+                <li><strong>Delivery Actions:</strong> For delivery missions, you can specify whether the drone should release a payload using a gripper mechanism or land at the delivery location and take off again.</li>
+                <li><strong>Final Action:</strong> After completing the mission, the drone can either land at the final delivery location or return to the takeoff location and land.</li>
+            </ul>
+
+            <h2>Example Configurations</h2>
+            <h3>Multicopter/Helicopter Example</h3>
+            <ul>
+                <li><strong>Takeoff:</strong> 10 feet above the takeoff point.</li>
+                <li><strong>Waypoints:</strong> 50 meters apart, 100 feet above the terrain.</li>
+                <li><strong>Landing:</strong> Land at the final waypoint.</li>
+            </ul>
+
+            <h3>Fixed Wing Example</h3>
+            <ul>
+                <li><strong>Takeoff:</strong> 15 m/s pitch angle, 100 feet above the takeoff point.</li>
+                <li><strong>Waypoints:</strong> 100 meters apart, 200 feet above the terrain.</li>
+                <li><strong>Landing:</strong> Use a fixed-wing landing pattern with a loiter radius of 75 meters.</li>
+            </ul>
+
+            <h3>Quadplane/VTOL Hybrid Example</h3>
+            <ul>
+                <li><strong>Takeoff:</strong> Vertical takeoff, 50 feet above the takeoff point.</li>
+                <li><strong>Waypoints:</strong> 75 meters apart, 150 feet above the terrain.</li>
+                <li><strong>Landing:</strong> Vertical landing at the final waypoint.</li>
+            </ul>
+        </div>
+
+        <div id="troubleshooting" class="section">
+            <h1>Troubleshooting</h1>
+            <ul>
+                <li><strong>Invalid Coordinates:</strong> Ensure that coordinates are entered in the correct format (lat, lon).</li>
+                <li><strong>No Waypoints Generated:</strong> Check that the KML file contains valid path data or that the start and end coordinates are correctly entered.</li>
+                <li><strong>Altitude Issues:</strong> Ensure that the altitude is set high enough to avoid terrain obstacles.</li>
+            </ul>
+        </div>
+
         <div id="support" class="section">
             <h1>Support</h1>
-            <p>Need help? Contact us at <a href="mailto:support@example.com">support@example.com</a> or visit our <a href="https://github.com/your-repo/automated-flight-planning">GitHub Repository</a>.</p>
+            <p>Need help? Contact us at <a href="mailto:versauas@gmail.com">versauas@gmail.com</a> for support. Please note that this is an open-source project currently in development. If you encounter any issues, we encourage you to report them so we can improve the software.</p>
         </div>
     </div>
 </body>
